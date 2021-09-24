@@ -1,4 +1,5 @@
-import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.js';
+import { DateTime } from 'luxon';
+// import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.js';
 
 export function getDatesDif({ from, to }) {
     if (from > to) {

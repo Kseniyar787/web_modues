@@ -9,7 +9,7 @@ export let printDateDiff = ({ years, months, days }, control) => {
     Годы: ${years}, 
     Масяцы: ${months}, 
     Дни: ${days}, 
-    `,control
+    `, control
     )
 
 }
