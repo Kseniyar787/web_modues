@@ -1,6 +1,8 @@
+// import css from "../css/style.css";
+import "../css/style.css";
+
 import { mainForTimer } from './mainForTimer.js';
 import { mainCalc } from './mainCalc.js';
-
 
 let timerInit = false;
 let calcInit = false;
