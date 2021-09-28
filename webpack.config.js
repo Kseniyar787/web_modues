@@ -2,6 +2,7 @@ const { resolve } = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
@@ -32,7 +33,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: resolve(__dirname, 'index.html')
-        })
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "mp3", to: "mp3" },
+            ],
+        }),
         // new BundleAnalyzerPlugin()
     ]
 };
